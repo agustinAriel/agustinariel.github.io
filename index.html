@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choco Paseador de Perros</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script defer src="assets/script.js"></script>
+  <!-- Agregado el link a Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CHOCODOG</div>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>PASEOS QUE TRANSFORMAN VIDAS</h1>
+        <p>Bienvenido a ChocoDog, tu servicio profesional de paseador de perros. Seguridad, cariño y aventura en cada paseo. ¡Tu mejor amigo en las mejores manos!</p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn primary">Reserva tu paseo ahora</a>
+          <a href="#services" class="btn secondary">Más sobre mis servicios</a>
+        </div>
+      </div>
+    </section>
+    <!-- SOBRE MI -->
+    <section id="about" class="section about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Sobre mí</h2>
+          <p>¡Hola! Soy Ariel, paseador de perros profesional con años de experiencia. Mi misión es brindar paseos seguros, divertidos y personalizados para cada perrito, adaptándome a sus necesidades y energía. Amo los animales y me comprometo a cuidar de tu mascota como si fuera mía.</p>
+        </div>
+        <div class="about-cards">
+          <div class="about-cards horizontal">
+            <div class="about-card">
+              <h3>Misión</h3>
+              <p>Ofrecer paseos responsables y llenos de cariño, priorizando el bienestar y felicidad de cada perro.</p>
+            </div>
+            <div class="about-card">
+              <h3>Visión</h3>
+              <p>Ser el paseador de confianza en la comunidad, promoviendo una vida activa y saludable para las mascotas.</p>
+            </div>
+            <div class="about-card">
+              <h3>Valores</h3>
+              <p>Respeto, honestidad, empatía y amor por los animales en cada paseo y servicio.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section id="services" class="section services-section">
+      <h2>Servicios</h2>
+      <div class="services-cards">
+        <div class="service-card">
+          <div class="service-img" style="background-image:url('assets/paseovip.jpg');"></div>
+          <h3>Paseos Individuales VIP</h3>
+          <p>Paseos exclusivos y personalizados para perros que requieren atención especial. Incluye reporte fotográfico.</p>
+          <ul class="service-features">
+            <li><strong>Duración:</strong> 45 minutos</li>
+            <li><strong>Zonas:</strong> Parques y áreas verdes seguras</li>
+            <li><strong>Atención:</strong> 100% individual</li>
+            <li><strong>Extras:</strong> Agua fresca y refuerzo positivo</li>
+          </ul>
+          <div class="price">$5000 / paseo</div>
+        </div>
+        <div class="service-card">
+          <div class="service-img" style="background-image:url('assets/paseogrupal.jpeg');"></div>
+          <h3>Paseos Grupales Divertidos</h3>
+          <p>Socialización y ejercicio en grupo, siempre bajo supervisión y con perros compatibles.</p>
+          <ul class="service-features">
+            <li><strong>Duración:</strong> 60 minutos</li>
+            <li><strong>Zonas:</strong> Circuitos seguros y parques cerrados</li>
+            <li><strong>Grupo:</strong> Máx. 4 perros por paseo</li>
+            <li><strong>Extras:</strong> Juegos y socialización guiada</li>
+          </ul>
+          <div class="price">$3500 / paseo</div>
+        </div>
+        <div class="service-card">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80');"></div>
+          <h3>Visitas a Domicilio</h3>
+          <p>Cuidado, alimentación y juego en casa cuando no puedes estar. Atención personalizada y mucho cariño.</p>
+          <ul class="service-features">
+            <li><strong>Duración:</strong> 30-40 minutos por visita</li>
+            <li><strong>Incluye:</strong> Alimentación, agua, paseo corto y juego</li>
+            <li><strong>Zona:</strong> En tu domicilio y alrededores seguros</li>
+            <li><strong>Extras:</strong> Reporte por WhatsApp</li>
+          </ul>
+          <div class="price">$7500 / visita</div>
+        </div>
+      </div>
+    </section>
+    <!-- BENEFICIOS -->
+    <section id="benefits" class="section benefits-section">
+      <h2>Veterinarias Colaboradoras</h2>
+      <div class="benefits-carousel">
+        <button class="carousel-btn prev" id="benefitPrev" aria-label="Anterior">&#10094;</button>
+        <div class="benefits-banners-carousel" id="benefitsBanners">
+          <div class="benefit-banner visual" style="background-image:url('assets/veterinaria1.png');">
+            <div class="benefit-overlay"></div>
+            <div class="benefit-content">
+              <img src="assets/veterinaria1.png" alt="Patitas Felices" class="benefit-img-logo">
+              <div>
+                <h3>Patitas Felices</h3>
+                <p><strong>Tel:</strong> 555-123-4567</p>
+                <p><strong>Dirección:</strong> <a href="https://maps.google.com/?q=Patitas+Felices+CDMX" target="_blank">Av. Canina 123, CDMX</a></p>
+                <p><strong>Horario:</strong> Lun-Vie 9:00-19:00, Sáb 10:00-14:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-banner visual" style="background-image:url('assets/veterinaria2.jpg');">
+            <div class="benefit-overlay"></div>
+            <div class="benefit-content">
+              <img src="assets/veterinaria2.jpg" alt="Clínica Huellitas" class="benefit-img-logo">
+              <div>
+                <h3>Clínica Huellitas</h3>
+                <p><strong>Tel:</strong> 555-987-6543</p>
+                <p><strong>Dirección:</strong> <a href="https://maps.google.com/?q=Huellitas+CDMX" target="_blank">Calle Peluda 456, CDMX</a></p>
+                <p><strong>Horario:</strong> Lun-Sáb 8:00-20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-banner visual" style="background-image:url('assets/veterinaria3.webp');">
+            <div class="benefit-overlay"></div>
+            <div class="benefit-content">
+              <img src="assets/veterinaria3.webp" alt="PetCare Express" class="benefit-img-logo">
+              <div>
+                <h3>PetCare Express</h3>
+                <p><strong>Tel:</strong> 555-222-3344</p>
+                <p><strong>Dirección:</strong> <a href="https://maps.google.com/?q=PetCare+Express+CDMX" target="_blank">Blvd. Mascota 789, CDMX</a></p>
+                <p><strong>Horario:</strong> Lun-Dom 7:00-22:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="benefitNext" aria-label="Siguiente">&#10095;</button>
+      </div>
+      <div class="carousel-indicators" id="benefitIndicators"></div>
+      </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact-modern">
+      <div class="contact-card">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li><span class="contact-icon"><i class="fas fa-phone"></i></span> <a href="tel:+542604293669">+54 2604293669</a></li>
+          <li><span class="contact-icon"><i class="fas fa-envelope"></i></span> <a href="mailto:choco.paseos@gmail.com">arielbarros313@gmail.com</a></li>
+          <li><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span> Palermo, CABA</li>
+        </ul>
+        <div class="contact-social">
+          <a href="https://wa.me/+542604293669" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/ariel_agust1n/" target="_blank" class="social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ariel.barros666" target="_blank" class="social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.paseaperros.com.ar/ariel.bar" class="social-btn email" aria-label="Animal">
+            <img src="assets/paseaperros-isologo.png" alt="Isologo Paseaperros" style="width: 1.5em; height: 1.5em; display: block; margin: 0 auto;">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© 2025 Choco Paseador de Perros</span>
+    </div>
+  </footer>
+</body>
+</html>
