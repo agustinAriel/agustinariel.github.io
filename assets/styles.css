@@ -782,7 +782,7 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  color: #3a8dde;
+  color: #ff7e6b;
 }
 .contact-list {
   list-style: none;
@@ -794,13 +794,13 @@ footer {
   align-items: center;
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
-  color: #222;
+  color: #ff7e6b;
   justify-content: center;
 }
 .contact-icon {
   font-size: 1.4rem;
   margin-right: 0.7rem;
-  color: #3a8dde;
+  color: #ff7e6b;
 }
 .contact-list a {
   color: #3a8dde;
