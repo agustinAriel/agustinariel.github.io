@@ -120,3 +120,22 @@ const showOnScroll = () => {
 };
 window.addEventListener('scroll', showOnScroll);
 window.addEventListener('DOMContentLoaded', showOnScroll);
+
+// Carrusel de galería Sobre mí (autoplay, sin flechas)
+(function() {
+  const gallery = document.querySelector('.about-gallery-carousel');
+  if (!gallery) return;
+  const images = gallery.querySelectorAll('.about-gallery-img');
+  let current = 0;
+  function showImg(idx) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === idx);
+    });
+  }
+  function nextImg() {
+    current = (current + 1) % images.length;
+    showImg(current);
+  }
+  showImg(current);
+  setInterval(nextImg, 3000);
+})();
