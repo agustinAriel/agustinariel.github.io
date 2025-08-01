@@ -803,12 +803,12 @@ footer {
   color: #ff7e6b;
 }
 .contact-list a {
-  color: #3a8dde;
+  color: #ff7e6b;
   text-decoration: none;
   transition: color 0.2s;
 }
 .contact-list a:hover {
-  color: #ff7e6b;
+  color: #ffffff;
 }
 .contact-social {
   display: flex;
